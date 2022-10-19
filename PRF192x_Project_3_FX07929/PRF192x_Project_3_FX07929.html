@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="PRF192x_Project_3_FX07929.css">
+    <script type="text/javascript" src="PRF192x_Project_3_FX07929.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <h1>Form đăng ký</h1>
+
+    <div class="container">
+
+
+        <!-- Ho ten -->
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-6 col-xs-12 col-md-4">
+                <p>Họ <span>*</span></p>
+                <input class="full form-control" type="text" placeholder="Nhập họ" id="surname">
+            </div>
+
+            <div class="col-sm-6 col-xs-12 col-md-4">
+                <p>Tên <span>*</span></p>
+                <input class="full form-control" type="text" placeholder="Nhập tên" id="name">
+            </div>
+        </div>
+
+        <!-- Email -->
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-12 col-xs-12 col-md-8">
+                <p>Email <span>*</span></p>
+                <input class="full form-control" type="text" placeholder="Nhập địa chỉ email" id="email">
+            </div>
+        </div>
+
+        <!-- Password  -->
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-6 col-xs-12 col-md-4">
+                <p>Mật khẩu (6-30 ký tự) <span>*</span></p>
+                <input class="full form-control" type="password" placeholder="Mật khẩu" id="psw">
+            </div>
+
+            <div class="col-sm-6 col-xs-12 col-md-4">
+                <p>Nhập lại mật khẩu <span>*</span></p>
+                <input class="full form-control" type="password" placeholder="Xác nhận mật khẩu" id="psw-retype">
+            </div>
+        </div>
+
+        <!-- Nam sinh Gioi tinh -->
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-3 col-xs-12 col-md-2 align-cen">Năm sinh <span>*</span>
+            </div>
+            <div class="col-sm-3 col-xs-12 col-md-2 align-cen">
+                <select name="namsinh" id="nam-sinh" class="custom-select">
+                    <option value="default">-chọn-</option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    <option value="1992">1992</option>
+                    <option value="1993">1993</option>
+                    <option value="1994">1994</option>
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                </select>
+            </div>
+
+            <div class="col-sm-2 col-xs-12 col-md-1 align-cen">
+                Giới tính
+            </div>
+
+            <div class="col-sm-4 col-xs-12 col-md-3">
+                <form action="">
+                    <div class="row align-cen">
+                        <div class="col">
+                            <label for="nam" class="radio-inline">
+                                <input type="radio" id="nam" name="gioi-tinh" value="nam"> Nam</label>
+                        </div>
+
+                        <div class="col">
+                            <label for="nu" class="radio-inline">
+                                <input type="radio" name="gioi-tinh" id="nu" value="nu"> Nữ</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Thanh pho  -->
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-3 col-xs-12 col-md-2 align-cen">
+                Thành phố <span>*</span></div>
+            <div class="col-sm-9 col-xs-12 col-md-6">
+                <select name="namsinh" id="thanhpho" class="custom-select">
+                    <option value="default">-chọn-</option>
+                    <option value="hanoi">Hà Nội</option>
+                    <option value="hcm">Hồ Chí Minh</option>
+                    <option value="haiphong">Hải Phòng</option>
+                    <option value="danang">Đà Nẵng</option>
+                    <option value="cantho">Cần Thơ</option>
+                    <option value="quangninh">Quảng Ninh</option>
+                    <option value="other">Khác</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="submit"><button onclick="checkForm()" class="btn btn-secondary btn-lg">Đăng ký</button></div>
+</body>
+
+</html>
